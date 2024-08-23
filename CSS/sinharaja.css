@@ -1,0 +1,386 @@
+* {box-sizing: border-box;
+  padding: 0;
+  margin:0;}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+ z-index: 999;
+ width:100%;
+}
+
+
+.imglogo {
+  width:15%;
+  height:15%;
+  float: left;
+    margin-right:20%;
+}
+.navbar a {
+
+
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+
+
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: fixed;
+
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/*---------------------------------------------------Header--------------------------------------------------*/
+
+
+/*------------------CSS CONTAINT ADD THIS----------------------------------------*/
+.slideshow-container {
+  max-width: 100%;
+  max-height: 100%;
+  position: static;
+  margin: auto;
+}
+
+.prev, .next {
+    position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 1rem 1.2rem;
+  border-radius: 5px;
+  background-color: #ddd;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: .3s;
+}
+.regform{
+    width:100%;
+   background-color:rgb(0,0,0,.9);
+   margin:auto;
+   font-size: 45px;
+   color:#FFFFFF;
+   padding:10x 0px 10px 0px;
+   text-align: center;
+   border-radius:12px 12px 0px 0px;
+   }
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+.numbertext {
+  color: black;
+  font-size: 18px;
+  padding: 30px 30px;
+  position: absolute;
+  top: 10%;
+}
+.para{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: url(../IMAGES/sinha.jpg);
+  background-position: center;
+  background-size: 117%;
+   background-image:rgb(0,0,0,.5);
+   width:100%;
+   height:550px;
+   margin:auto;
+   padding: 75px 0;
+}
+.circle{
+  width: 200px;
+  height: 200px;
+  background: url(../IMAGES/sinhara.jpg);
+  background-size: 150%;
+  background-position: center;
+  border-radius: 50%;
+  float: left;
+  shape-outside: circle();
+  margin: 30px 30px 30px 0;
+}
+
+
+
+
+.container{
+width: 700px;
+    padding: 30px;
+    background: #fff;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0 15px 50px rgba(0,0,0,.2);
+    margin: 0px auto;
+}
+p{
+  margin: 0;
+  padding: 0;
+  text-align: justify;
+  line-height: 22px;
+}
+h1{
+  margin: 0 0 20px;
+  padding: 0;
+  font-size: 30px;
+
+}
+
+.dot {
+  width: 18px;
+  height: 18px;
+  margin: .3rem;
+  border: 2.5px solid black;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: red;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+
+/*...........................................footer.............................................................*/
+
+.fgridrow{
+    display:grid;
+    grid-auto-rows: 90% 10%;
+}
+
+.ftupper{
+    background: rgba(121, 120, 120, 0.39);
+    display: grid;
+    grid-template-columns: 15% 60% 20% ;
+}
+
+.dlo{
+
+}
+
+.im2{
+    width: 375px;
+    height: 80px; 
+    margin-left:-15%;
+    margin-top:4%;
+    padding-top: 7px;
+    padding-left: 65px;
+}
+
+.ftupper-about{
+    display:grid;
+    grid-template-rows: 20% 80%;
+    margin-left: auto;
+
+}
+
+.abt{
+    color: white;
+    margin-left: 70px;
+    padding-top: 10px;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.abtde{
+    
+}
+
+.abtde ul{
+    margin-left: 70px;
+}
+
+.abtde ul li{
+    list-style: none;
+    font-family: sans-serif;
+}
+
+.abtde ul li a{
+    color: white;
+    text-decoration:none;
+    font-size:12px;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+
+.abtde ul li a:hover{
+    color:rgba(16, 2, 54, 0.767);
+    text-decoration: underline;
+    transition: 0.25s;
+}
+
+
+.ftupper-cantact-form{
+    display: grid;
+    grid-template-rows: 20% 30% 10% 40%;
+    margin-left: auto;
+
+
+}
+
+
+.follow{
+    color: white;
+    margin-left: 70px;
+    padding-top: 10px;
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.fol{
+
+}
+
+.fol ul{
+    margin-left: 70px;
+}
+
+.fol ul li{
+    font-family: sans-serif;
+    list-style: none;
+    display: inline;
+}
+
+.fol ul li img{
+    height: 25px;
+    width: 25px;
+    padding: 5px;
+}
+
+.fol ul li img:hover{
+
+    width: 30px;
+    height: 30px;
+    transition: 0.4s;
+}
+
+.quection{
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    margin-left: 70px;
+    color:white;
+}
+
+.que{
+    margin-left: 70px;
+
+}
+
+.que ul{
+    list-style: none;
+    font-family: sans-serif;
+}
+
+.que ul li a{
+    color:white;
+    text-decoration:none;
+    font-size:10px;
+    font-family: sans-serif;
+    font-weight: 500;
+    
+}
+
+.que ul li a:hover{
+    color:rgba(16, 2, 54, 0.767);
+    text-decoration: underline;
+    transition: 0.25s;
+}
+
+
+.ftdown{
+    color: #ffffff;
+    text-align: center;
+    font-family: sans-serif;
+    margin-top: 5px;
+    font-size: 15px;
+
+}
+

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>OUTBACK ADVENCTURE SAFARIS</title>
+
+<link rel="stylesheet" type="text/css" href="../CSS/minneriya.css">
+
+<style>
+  body{
+    background-image: url("../IMAGES/bg.jpg");
+    background-size: cover;
+    
+  }
+</style>
+</head>
+
+<body>
+<div class="navbar">
+  <img class="imglogo" src="../IMAGES/logo.jpeg">
+  <a href="home_page.html">Home</a>
+  <a href="Gallery.html">Gallery</a>
+  <a href="Contact Us.htmlt">Contact Us</a>
+
+      <div class="dropdown">
+        <button class="dropbtn">Wild Life Tours 
+        <i class="fa fa-caret-down"></i>
+        </button>
+          <div class="dropdown-content">
+            <a href="packages.html">Packages</a>
+            <a href="Offers.html">Offers</a>
+          </div>
+      </div> 
+  <a href="Inquiry Form.html">Inquire Now</a>
+  <a href="login.html">Login</a>
+  <a href="registation_form.html">Register</a>
+    </div>
+<!--------------------------------------------------------------------------Header-------------------------------------------------------------------->
+
+
+
+   <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 5</div>
+  <img src="../IMAGES/G.jpeg" style="width:100%;height:600px">
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 5</div>
+  <img src="../IMAGES/e.jpg" style="width:100%;height: 600px">
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 5</div>
+  <img src="../IMAGES/h.jpeg" style="width:100%;height: 600px">
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 5</div>
+  <img src="../IMAGES/i.jpeg" style="width:100%;height: 600px">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 5</div>
+  <img src="../IMAGES/sura.jpg" style="width:100%;height: 600px">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+</div>
+
+<div class="regform"> Minneriya National Park </div>
+
+<div class="para">
+<div class="container">
+  <div class="circle"></div>
+  <h1> Minneriya National Park </h1>
+  <p>The Minneriya National Park is situated in the District of Pollonnaruwa. It is within the proximity of the Minneriya Reservoir which is one of the largest man made water bodies in the country. The tank nourishes its surrounding plains throughout the year leading to high levels of biological diversity in the Minneriya National Park. The park is famous around the world as a location that welcomes one of the biggest gatherings of Asian Elephants. A population of around 150 – 200 elephants roam the park and they can be seen uniting as one big herd at certain times of the year. In addition to the elephants, the park is home to 24 species of mammals as well as a large amount of aquatic birds. A variety of faunal features and diverse habitats can also be seen in the park.</p>
+</div>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+
+
+ <!---------------------------------------------footer-------------------------------------------------------------->
+
+            <div class="fgridrow">
+
+
+                <div class="ftupper">
+
+
+                    <div class="dlo">
+
+                            <img class="im2" src="../IMAGES/logo.jpeg">
+            
+                    </div><!--dlo-->
+            
+
+                    <div class="ftupper-about">
+
+                        <div class="abt">
+                            About
+                        </div><!--abt-->
+                            
+                        <div class="abtde">
+
+                            <ul>
+
+                                <li><a href="About Us.html">About Us</a></li>
+                                <li><a href="Vacancies.html">Vacancies</a></li>
+                                <li><a href="privacy_policy.html">Privacy Policy</a></li>
+                                <li><a href="terms of service.html">Terms of Service</a></li>
+                            </ul>
+                        </div><!--abtde-->
+                    </div><!--ftupper-->
+
+        
+
+
+                    <div class="ftupper-cantact-form">  
+                        <div class="follow">
+                            Follow Us
+                        </div>
+                        <div class="fol">
+                            <ul>
+                                <li><a href="https://www.facebook.com/"><img src="../IMAGES/fb.png" ></a></li>
+                                <li><a href="https://twitter.com/login?lang=en"><img src="../IMAGES/twt.png" ></a></li>
+                                <li><a href="https://myaccount.google.com/"><img src="../IMAGES/ggl.png" ></a></li>
+                                <li><a href="https://www.instagram.com/accounts/login/?hl=en"><img src="../IMAGES/int.png" ></a></li>
+                            </ul>    
+                        </div><!--fol-->    
+
+                        <div class="quection">
+                                <h3> Safety First </h3>
+                        </div>
+
+                        <div class="que">
+                            <ul><br>
+                                <li><a href="covid.html"> <h4> Covid 19 Upadate </h4> </a></li>
+                            
+                            </ul>
+
+                        </div>
+
+                    </div><!--ftupper-contact-form-->
+
+                </div><!--ftupper-->
+
+
+                <div class="ftdown">
+                    &copy;OutBackAdventuer.lk | Designed and Developed by Team
+                </div><!--ftdown-->
+
+
+            </div><!--e1-->
+
+
+        </div><!--a1-->
+
+
+</body>
+</html> 

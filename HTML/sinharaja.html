@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>OUTBACK ADVENCTURE SAFARIS</title>
+
+<link rel="stylesheet" type="text/css" href="../CSS/sinharaja.css">
+
+<style>
+  body{
+    background-image: url("../IMAGES/bg.jpg");
+    background-size: cover;
+    
+  }
+</style>
+</head>
+
+<body>
+<div class="navbar">
+  <img class="imglogo" src="../IMAGES/logo.jpeg">
+  <a href="home_page.html">Home</a>
+  <a href="Gallery.html">Gallery</a>
+  <a href="Contact Us.html">Contact Us</a>
+
+      <div class="dropdown">
+        <button class="dropbtn">Wild Life Tours 
+        <i class="fa fa-caret-down"></i>
+        </button>
+          <div class="dropdown-content">
+            <a href="packages.html">Packages</a>
+            <a href="Offers.html">Offers</a>
+          </div>
+      </div> 
+  <a href="Inquiry Form.html">Inquire Now</a>
+  <a href="login.html">Login</a>
+  <a href="registation_form.html">Register</a>
+    </div>
+<!--------------------------------------------------------------------------Header-------------------------------------------------------------------->
+
+
+
+ 
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 5</div>
+  <img src="../IMAGES/G.jpeg" style="width:100%;height:600px">
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 5</div>
+  <img src="../IMAGES/e.jpg" style="width:100%;height: 600px">
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 5</div>
+  <img src="../IMAGES/h.jpeg" style="width:100%;height: 600px">
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 5</div>
+  <img src="../IMAGES/i.jpeg" style="width:100%;height: 600px">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 5</div>
+  <img src="../IMAGES/sura.jpg" style="width:100%;height: 600px">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+</div>
+
+<div class="regform"> Sinharaja Reinforest </div>
+
+<div class="para">
+<div class="container">
+  <div class="circle"></div>
+  <h1> Sinharaja Reinforest </h1>
+  <p>The apex of rainforests in Sri Lanka and home to 95% of the endemic birds in the country, Sinharaja is a globally important biodiversity venue with a highly unique cultural significance. Among its many recognitions, the rainforest has been designated as a UNESCO Natural World Heritage Site, UNESCO Biosphere Reserve and also a Biodiversity Hotspot by the International Union for Conservation of Nature (IUCN). It is a sought after by wildlife researchers as well as bird watchers from all parts of the world due to its richness in biodiversity and habitat complexity.  This lowland evergreen rain forest is adorned with lush vegetation, ample water falls and a perfect climate. The name Sinaharaja which translates to Lion (Sinha) King (Raja) makes it a revered location by Sri Lankans since it reflects the popular belief about the origin of the Sinhala people. According to the legend, the inception of the race is attributed to a union between a lion king and a princess who have sought refuge in the forest.</p>
+</div>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+
+
+ <!---------------------------------------------footer-------------------------------------------------------------->
+
+            <div class="fgridrow">
+
+
+                <div class="ftupper">
+
+
+                    <div class="dlo">
+
+                            <img class="im2" src="../IMAGES/logo.jpeg">
+            
+                    </div><!--dlo-->
+            
+
+                    <div class="ftupper-about">
+
+                        <div class="abt">
+                            About
+                        </div><!--abt-->
+                            
+                        <div class="abtde">
+
+                            <ul>
+
+                                <li><a href="About Us.html">About Us</a></li>
+                               <li><a href="Vacancies.html">Vacancies</a></li>
+                                <li><a href="privacy_policy.html">Privacy Policy</a></li>
+                                <li><a href="terms of service.html">Terms of Service</a></li>
+                            </ul>
+                        </div><!--abtde-->
+                    </div><!--ftupper-->
+
+        
+
+
+                    <div class="ftupper-cantact-form">  
+                        <div class="follow">
+                            Follow Us
+                        </div>
+                        <div class="fol">
+                            <ul>
+                                <li><a href="https://www.facebook.com/"><img src="../IMAGES/fb.png" ></a></li>
+                                <li><a href="https://twitter.com/login?lang=en"><img src="../IMAGES/twt.png" ></a></li>
+                                <li><a href="https://myaccount.google.com/"><img src="../IMAGES/ggl.png" ></a></li>
+                                <li><a href="https://www.instagram.com/accounts/login/?hl=en"><img src="../IMAGES/int.png" ></a></li>
+                            </ul>    
+                        </div><!--fol-->    
+
+                       
+                        <div class="quection">
+                                <h3> Safety First </h3>
+                        </div>
+
+                        <div class="que">
+                            <ul><br>
+                                <li><a href="covid.html"> <h4> Covid 19 Upadate </h4> </a></li>
+                            
+                            </ul>
+
+
+                        </div>
+
+                    </div><!--ftupper-contact-form-->
+
+                </div><!--ftupper-->
+
+
+                <div class="ftdown">
+                    &copy;OutBackAdventuer.lk | Designed and Developed by Team
+                </div><!--ftdown-->
+
+
+            </div><!--e1-->
+
+
+        </div><!--a1-->
+
+
+</body>
+</html> 
